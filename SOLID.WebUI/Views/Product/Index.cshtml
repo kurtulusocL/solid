@@ -1,0 +1,64 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using X.PagedList.Mvc.Common
+@model IPagedList<Product>
+@{
+    ViewData["Title"] = "Product Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <p>
+            @ViewData["Title"] - <a asp-controller="Product" asp-action="Create" class="btn btn-primary btn-sm">Create New Product</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stocks</th>
+                    <th>Hit</th>
+                    <th>Category</th>
+                    <th>Pictures</th>
+                    <th>Comments</th>
+                    <th>Created Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Price.ToString()</td>
+                        <td>@item.Stock</td>
+                        <td>@item.Hit.Value.ToString()</td>
+                        <td>
+                            <a asp-controller="Product" asp-action="CategoryProduct" asp-route-id="@item.CategoryId" class="btn btn-link" target="_blank">@item.Category.Name</a>
+                        </td>
+                        <td>@item.Pictures.Count()</td>
+                        <td>@item.Comments.Count()</td>
+                        <td>@item.CreatedDate.ToLongDateString()</td>
+                        <td>
+                            <a asp-controller="Product" asp-action="ProductDetailCreate" class="btn btn-info btn-sm" asp-route-id="@item.Id">Add Info</a> |
+                            <a asp-controller="Product" asp-action="StockCreate" class="btn btn-primary btn-sm" asp-route-id="@item.Id">Add Stock</a> |
+                            <a asp-controller="Product" asp-action="PhotoCreate" class="btn btn-success btn-sm" asp-route-id="@item.Id">Add Image</a> |
+                            <a asp-controller="Product" asp-action="CommentCreate" class="btn btn-warning btn-sm" asp-route-id="@item.Id">Add Comment</a> |
+                        </td>
+                        <td>
+                            <a asp-controller="Product" asp-action="Edit" class="btn btn-success btn-sm" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-controller="Product" asp-action="Detail" class="btn btn-info btn-sm" asp-route-id="@item.Id">Detail</a> |
+                            <a asp-controller="Product" asp-action="ProductDetail" class="btn btn-dark btn-sm" asp-route-id="@item.Id">Information</a> |
+                            <a asp-controller="Product" asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.Id" onclick="return confirm('Are you sure ?')">Delete</a>
+                        </td>
+                    </tr>
+                    @await Component.InvokeAsync("HitRead", new { id = item.Id })
+                }
+            </tbody>
+        </table>
+        <div class="pagination">
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptionsBase.Classic)
+        </div>
+    </div>
+</div>

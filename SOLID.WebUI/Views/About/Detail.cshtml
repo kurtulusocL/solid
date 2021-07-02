@@ -1,0 +1,30 @@
+﻿@model About
+@{
+    ViewData["Title"] = "About Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <p>
+            @ViewData["Title"] - <a asp-controller="About" asp-action="Index" class="btn btn-primary btn-sm">About</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Description</td>
+                    <td>
+                        <a asp-controller="About" asp-action="Edit" class="btn btn-success btn-sm" asp-route-id="@Model.Id">Edit</a> |
+                        <a asp-controller="About" asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@Model.Id" onclick="return confirm('Are you sure ?')">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

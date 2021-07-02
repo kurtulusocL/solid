@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Picture>
+@{
+    ViewData["Title"] = "Product Photos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <p>
+            @ViewData["Title"]
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th width="90">Image</th>
+                    <th>Product</th>
+                    <th>Created Date</th>
+                    <th>Updated Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="90">
+                            <img src="~/img/product/@item.ImageUrl" class="img-fluid" />
+                        </td>
+                        <td>
+                            @if (item.ProductId != null)
+                            {
+                                @item.Product.Name
+                            }
+                        </td>
+                        <td>@item.CreatedDate.ToLongDateString()</td>
+                        <td>
+                            @if (item.UpdatedDate != null)
+                            {
+                                @item.UpdatedDate.Value.ToLongDateString()
+                            }
+                            else
+                            {
+                                <span>-</span>
+                            }
+                        </td>
+                        <td>
+                            <a asp-controller="Picture" asp-action="Edit" class="btn btn-success btn-sm" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-controller="Picture" asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.Id" onclick="return confirm('Are you sure ?')">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

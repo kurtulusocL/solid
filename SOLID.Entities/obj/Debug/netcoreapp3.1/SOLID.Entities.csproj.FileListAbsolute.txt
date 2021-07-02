@@ -1,0 +1,15 @@
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Entities.deps.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Entities.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Entities.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.csproj.AssemblyReference.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.AssemblyInfoInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.AssemblyInfo.cs
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.csproj.CoreCompileInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Entities.runtimeconfig.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Entities.runtimeconfig.dev.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.genruntimeconfig.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Core.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\bin\Debug\netcoreapp3.1\SOLID.Core.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Entities\obj\Debug\netcoreapp3.1\SOLID.Entities.csproj.CopyComplete

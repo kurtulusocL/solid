@@ -1,0 +1,40 @@
+﻿@model ProductDetail
+@{
+    ViewData["Title"] = "Add Detail for Product";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <form asp-action="ProductDetailCreate" method="post">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Detail" class="control-label"></label>
+                    <textarea asp-for="Detail" name="Detail" class="form-control"></textarea>
+                    <span asp-validation-for="Detail" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Subdetail" class="control-label"></label>
+                    <textarea asp-for="Subdetail" name="Subdetail" class="form-control"></textarea>
+                    <span asp-validation-for="Subdetail" class="text-danger"></span>
+                </div>
+                <hr />
+                <div class="form-group">
+                    <input type="submit" value="Add Detail" class="btn btn-primary" />
+                    <input type="hidden" asp-for="ProductId" />
+                    <a asp-controller="Product" asp-action="Index" class="btn btn-warning">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <a asp-controller="Product" asp-action="Index">Back to Product List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+</div>

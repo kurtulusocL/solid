@@ -1,0 +1,17 @@
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.DataAccess.deps.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.DataAccess.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.DataAccess.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.AssemblyInfoInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.AssemblyInfo.cs
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.DataAccess.runtimeconfig.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.DataAccess.runtimeconfig.dev.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.genruntimeconfig.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.Core.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.Entities.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.Entities.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\bin\Debug\netcoreapp3.1\SOLID.Core.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.csproj.AssemblyReference.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.DataAccess\obj\Debug\netcoreapp3.1\SOLID.DataAccess.csproj.CopyComplete

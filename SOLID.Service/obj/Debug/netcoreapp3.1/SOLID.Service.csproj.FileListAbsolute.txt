@@ -1,0 +1,9 @@
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\bin\Debug\netcoreapp3.1\SOLID.Service.deps.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\bin\Debug\netcoreapp3.1\SOLID.Service.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\bin\Debug\netcoreapp3.1\SOLID.Service.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\obj\Debug\netcoreapp3.1\SOLID.Service.csproj.AssemblyReference.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\obj\Debug\netcoreapp3.1\SOLID.Service.AssemblyInfoInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\obj\Debug\netcoreapp3.1\SOLID.Service.AssemblyInfo.cs
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\obj\Debug\netcoreapp3.1\SOLID.Service.csproj.CoreCompileInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\obj\Debug\netcoreapp3.1\SOLID.Service.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Service\obj\Debug\netcoreapp3.1\SOLID.Service.pdb

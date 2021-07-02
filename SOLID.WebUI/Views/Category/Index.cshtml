@@ -1,0 +1,54 @@
+﻿@using X.PagedList.Mvc.Core
+@using X.PagedList
+@using X.PagedList.Mvc.Common
+@model IPagedList<Category>
+@{
+    ViewData["Title"] = "Category Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <p>
+            @ViewData["Title"] - <a asp-controller="Category" asp-action="Create" class="btn btn-primary btn-sm">Create New Category</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Product</th>
+                    <th>Created Date</th>
+                    <th>Updated Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Products.Count()</td>
+                        <td>@item.CreatedDate.ToLongDateString()</td>
+                        <td>
+                            @if (item.UpdatedDate != null)
+                            {
+                                @item.UpdatedDate.Value.ToLongDateString()
+                            }
+                            else
+                            {
+                                <span>-</span>
+                            }
+                        </td>
+                        <td>
+                            <a asp-controller="Category" asp-action="Edit" class="btn btn-success btn-sm" asp-route-id="@item.Id">Edit</a> |
+                            <a asp-controller="Category" asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@item.Id" onclick="return confirm('Are you sure ?')">Delete</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="pagination">
+        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }), PagedListRenderOptionsBase.Classic)
+    </div>
+</div>

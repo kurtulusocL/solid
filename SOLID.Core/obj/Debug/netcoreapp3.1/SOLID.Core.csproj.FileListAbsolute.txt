@@ -1,0 +1,12 @@
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\bin\Debug\netcoreapp3.1\SOLID.Core.deps.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\bin\Debug\netcoreapp3.1\SOLID.Core.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\bin\Debug\netcoreapp3.1\SOLID.Core.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.AssemblyInfoInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.AssemblyInfo.cs
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.csproj.CoreCompileInputs.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.dll
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.pdb
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\bin\Debug\netcoreapp3.1\SOLID.Core.runtimeconfig.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\bin\Debug\netcoreapp3.1\SOLID.Core.runtimeconfig.dev.json
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.genruntimeconfig.cache
+C:\Users\kurtulusocL\Desktop\SOLID\SOLID.Core\obj\Debug\netcoreapp3.1\SOLID.Core.csproj.AssemblyReference.cache

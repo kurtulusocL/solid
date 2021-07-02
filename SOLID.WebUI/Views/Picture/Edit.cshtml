@@ -1,0 +1,34 @@
+﻿@model Picture
+@{
+    ViewData["Title"] = "Update to Picture";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                @Html.AntiForgeryToken()
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="ImageUrl" class="control-label"></label>
+                    <input name="images" type="file" multiple class="form-control" />
+                    <span asp-validation-for="ImageUrl" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update Photo(s)" class="btn btn-primary" />
+                    <input type="hidden" asp-for="ProductId" />
+                    <a asp-controller="Picture" asp-action="Index" class="btn btn-warning">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <a asp-controller="Picture" asp-action="Index">Back to Picture List</a>
+    </div>
+
+    @section Scripts {
+        @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    }
+
+</div>

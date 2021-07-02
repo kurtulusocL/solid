@@ -1,0 +1,43 @@
+﻿@model ProductDetail
+@{
+    ViewData["Title"] = "Product Information";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <p>
+            @ViewData["Title"] - <a asp-controller="Product" asp-action="Index" class="btn btn-primary btn-sm">Products</a> - <a asp-controller="ProductDetail" asp-action="Index" class="btn btn-primary btn-sm">Product Details</a>
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Detail</th>
+                    <th>Subdetail</th>
+                    <th>Update Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@Model.Detail</td>
+                    <td>@Model.Subdetail</td>
+                    <td>
+                        @if (Model.UpdatedDate != null)
+                        {
+                            @Model.UpdatedDate.Value.ToLongDateString()
+                        }
+                        else
+                        {
+                            <span>-</span>
+                        }
+                    </td>
+                    <td>
+                        <a asp-controller="ProductDetail" asp-action="Edit" class="btn btn-success btn-sm" asp-route-id="@Model.Id">Edit</a> |
+                        <a asp-controller="ProductDetail" asp-action="Delete" class="btn btn-danger btn-sm" asp-route-id="@Model.Id" onclick="return confirm('Are you sure ?')">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
